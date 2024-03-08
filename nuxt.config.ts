@@ -4,7 +4,7 @@ import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
   bridge: {
-        nitro: true
+        nitro: false
   },
 
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -72,9 +72,9 @@ export default defineNuxtConfig({
   build: {
   },
 
-  render: {
-    bundleRenderer: {
-      shouldPrefetch: () => false
-    },
-  },
+//   render: {
+//     bundleRenderer: {
+//       shouldPrefetch: () => false
+//     },
+//   },
 })
